@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header img {
+  height: 500px;
+  width: 100%;
+  /* opacity: 0.8; */
+  /* position: absolute; */
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("home-images/newstyle.jpg");
+  height: 34rem;
+  background-size: cover;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  align-content: center;
+}
+
+nav ul a {
+  align-items: center;
+  text-decoration: none;
+  color: #e6e3e0;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.msg {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #faf9f8;
+  z-index: 3;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #e6e3e0;
+  font-family: cursive;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+  padding: 10px;
+}
+
+.msg span {
+  margin-left: 15px;
+  color: #ddccac;
+}
+
+.item-container {
+  margin-left: 10px;
+  margin-top: 15px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  gap: 1rem;
+  overflow: scroll;
+}
+.item-container::-webkit-scrollbar{
+   display: none;
+}
+.goods{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.head{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.item img{
+  width: 10rem;
+  height: 12rem;
+  border-radius: 5px;
+  margin: 0.8rem;
+}
+.item{
+  width: 12rem;
+  height: 16rem;
+  border: 2px solid #e6d0a4;
+}
+.text{
+    margin: 0 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+  width: 60px;
+  height: 20px;
+  background-color: #ddccac;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s ease-in ;
+}
+button:hover{
+  background-color:#e6e3e0;
+}
+.footer{
+  height:3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424242 ;
+}
+@media (max-width: 800px) {
+ .content ul{
+    display: none;
+ }
+ button{
+    display: block;
+
+ }
+}

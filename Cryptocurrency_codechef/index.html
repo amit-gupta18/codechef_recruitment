@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" id="logo">
+            <ul class="nav-links">
+                <li>Market</li>
+                <li>Features</li>
+                <li>White Papers</li>
+                <li>About Us</li>
+            </ul>
+            <a href="#">EN</a>
+            
+        </nav>
+        <div class="toggle-btn">
+            <span> Theme: </span>
+            <input type="checkbox" id="check">
+            <label for="check" class="button"></label>
+        </div>
+        <div class="info">
+            <div class="content">
+                <p id="heading">BUY &<br>SELL <span>Crypto</span></p>
+                <p id="wording">
+                    World's biggest Cryptocurrency exchange available on web as well as mobile phone.
+                </p>
+                <div class="btn"><a href="#">EXPLORE MORE</a></div>
+            </div>
+            <div class="coin-list">
+                <div class="coin">
+                    <img src="Images/bitcoin.png">
+                    <div class="words">
+                        <h2>$ <span id="bitcoin"></span></h2>
+                        <p> <a href="https://bitcoin.org/en/" target="_blank">Bitcoin</a></p>
+                    </div>
+                </div>
+                <div class="coin">
+                    <img src="Images/dogecoin.png">
+                    <div class="words">
+                        <h2>$ <span id="dogecoin"></span></h2>
+                        <p><a href="https://dogecoin.com/" target="_blank"> Dogecoin </a></p>
+                    </div>
+                </div>
+                <div class="coin">
+                    <img src="Images/ethereum.png">
+                    <div class="words">
+                        <h2>$ <span id="ethereum"> </span></h2>
+                        <p><a href="https://ethereum.org/en/" target="_blank">Ethereum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
